@@ -1,5 +1,6 @@
 package dio.spring_web.controller;
 
+import dio.spring_web.handler.BusinessException;
 import dio.spring_web.model.Usuario;
 import dio.spring_web.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,4 +35,5 @@ public class UsuarioController {
     public void postUser(@RequestBody Usuario usuario) {
         repository.save(usuario);
     }
+
 }
